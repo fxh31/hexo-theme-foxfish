@@ -1,0 +1,12 @@
+# Sidebar
+sidebar: right
+foxfish_widgets:
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+# widget behavior
+archive_type: "monthly"
+show_count: false

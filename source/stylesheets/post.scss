@@ -1,0 +1,235 @@
+/* 首页 */
+.article {
+  background: var(--color-white-light);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .article-badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+
+    .article-top {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 5px;
+      color: var(--color-white-light);
+      background-color: var(--color-light);
+      text-align: center;
+      border-radius: 3px;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .article-repost {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      margin-left: 5px;
+      color: var(--color-white-light);
+      background-color: var(--color-light);
+      text-align: center;
+      border-radius: 3px;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .article-inner {
+    position: relative;
+    display: flex;
+
+    // 首页文章流不显示视频
+    video {
+      display: none;
+    }
+
+    .article-feature {
+      flex: 0 0 260px;
+      margin-right: 20px;
+      position: relative;
+
+      a {
+        border-radius: 5px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          display: block;
+          height: auto;
+          transition: all 0.3s ease-in-out;
+          width: 100%;
+        }
+      }
+
+      a::before {
+        background-color: var(--color-black);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: all 0.8s ease 0s;
+        opacity: 0.16;
+        z-index: 1;
+      }
+
+      a:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
+
+      a:hover::before {
+        opacity: 0;
+      }
+    }
+
+    .article-body {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .article-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0 0 12px;
+
+        a {
+          color: var(--color-type);
+          line-height: 1.3;
+
+          &:hover {
+            color: var(--color-main);
+          }
+        }
+      }
+
+      .article-entry {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .article-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 0;
+    // font-family: 'Oswald', sans-serif;
+
+    .article-more-info {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: flex-start;
+      white-space: nowrap;
+
+      .article-date {
+        align-items: center;
+        border-left: 3px solid var(--color-light);
+        color: var(--color-white);
+        margin: 0 0 5px 10px;
+        padding-left: 8px;
+      }
+
+      .article-category {
+        align-items: center;
+        border-left: 3px solid var(--color-light);
+        display: flex;
+        margin: 0 0 5px 10px;
+        padding-left: 8px;
+      }
+
+      .article-tag {
+        align-items: center;
+        border-left: 3px solid var(--color-light);
+        display: flex;
+        margin: 0 0 5px 10px;
+        padding-left: 8px;
+      }
+
+      .article-tag-list {
+        display: flex;
+        margin: 0;
+
+        li {
+          list-style: none;
+          margin: 0 3px 0 0;
+        }
+      }
+    }
+
+    a {
+      color: var(--color-white);
+
+      &:hover {
+        color: var(--color-type);
+      }
+    }
+  }
+
+  // Video
+  .article-video {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  // Tweet
+  .article-tweet {
+    position: relative;
+
+    // 首页文章流不显示视频
+    video {
+      display: none;
+    }
+
+    &-quote {
+      color: #ccc;
+      left: 0;
+      position: absolute;
+      top: 0;
+      font-size: 50px;
+      transition: all 0.3s;
+    }
+
+    &-content {
+      padding: 0 0 10px 70px;
+
+      p {
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+
+    &-common {
+      align-items: center;
+      border-left: 3px solid var(--color-light);
+      margin: 0 0 5px 10px;
+      padding-left: 5px;
+    }
+
+    .article-footer {
+      justify-content: start;
+      padding-left: 60px;
+    }
+  }
+
+  .article-tweet:hover {
+    .article-tweet-quote {
+      transform: scale(1.1);
+    }
+  }
+}
