@@ -1,47 +1,16 @@
-<div class="container">
+<div class="container-header">
   <header class="header">
     <div class="header-type">
-      <div class="header-type-inner">
-        <% if (config.foxfish_logo_typed_animated){ %>
-        <div id="typed-strings" style="display: none">
-          <p><%= config.title %></p>
-        </div>
-        <a class="header-type-title" id="typed" href="/"></a>
-        <% } else { %>
-        <a class="header-type-title" href="/"><%= config.title %></a>
-        <% } %> <% if (is_page()){ %>
-        <span class="header-type-page-title">| <%= page.title %></span>
-        <% } %>
-      </div>
+      <div class="header-type-inner"><%= config.title %></div>
     </div>
+
     <div class="header-menu">
       <div class="header-menu-inner">
-        <% for (var i in config.foxfish_menu){ %>
+        <% for (let i in config.foxfish_menu){ %>
         <a href="<%- url_for(config.foxfish_menu[i]) %>"><%= i %></a>
         <% } %>
       </div>
     </div>
-
-    <div class="header-menu-mobile">
-      <div class="header-menu-mobile-inner" id="mobile-menu-open">
-        <i class="icon icon-menu"></i>
-      </div>
-    </div>
   </header>
-
-  <!-- <div class="header-menu-mobile-menu">
-    <div class="header-menu-mobile-menu-bg"></div>
-    <div class="header-menu-mobile-menu-wrap">
-      <div class="header-menu-mobile-menu-inner">
-        <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
-          <i class="icon icon-cross"></i>
-        </div>
-        <div class="header-menu-mobile-menu-list">
-          <% for (var i in config.foxfish_menu){ %>
-          <a href="<%- url_for(config.foxfish_menu[i]) %>"><%= i %></a>
-          <% } %>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  <% console.log(config); %>
 </div>
