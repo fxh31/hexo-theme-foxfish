@@ -5,14 +5,7 @@
   itemprop="blogPost"
 >
   <div class="article-inner">
-    <% if (!post.video){ %> <%- partial('post/gallery') %> <% } %> <% if
-    (post.video && post.layout !== 'tweet'){ %>
-    <div class="article-video">
-      <video class="article-video-plyr" data-poster="<%= post.video.poster %>">
-        <source src="<%= post.video.src %>" />
-      </video>
-    </div>
-    <% } %> <% if ((post.link || post.title) && post.layout !== 'tweet'){ %>
+    <% if ((post.link || post.title) && post.layout !== 'tweet'){ %>
     <header class="article-header">
       <%- partial('post/title', {class_name: 'article-title'}) %>
     </header>

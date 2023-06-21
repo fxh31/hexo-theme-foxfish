@@ -6,7 +6,7 @@
     id="article-nav-newer"
     class="article-nav-link-wrap"
   >
-    <div class="article-nav-caption"><%= __('newer') %></div>
+    <div class="article-nav-caption">上一页</div>
     <div class="article-nav-title">
       <% if (post.prev.title){ %> <%= post.prev.title %> <% } else { %> (no
       title) <% } %>
@@ -18,7 +18,7 @@
     id="article-nav-older"
     class="article-nav-link-wrap"
   >
-    <div class="article-nav-caption"><%= __('older') %></div>
+    <div class="article-nav-caption">下一页</div>
     <div class="article-nav-title"><%= post.next.title %></div>
   </a>
   <% } %>

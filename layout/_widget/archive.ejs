@@ -1,7 +1,9 @@
 <!-- 侧边栏的归档 -->
 <% if (site.posts.length){ %>
 <div class="widget-wrap widget-archive">
-  <div class="widget-title"><span>Archive</span></div>
+  <div class="widget-title">
+    <span><i class="iconfont icon-archive"></i>Archive</span>
+  </div>
   <div class="widget-inner">
     <%- list_archives({show_count: config.show_count, type: 'yearly', format:
     'YYYY'}) %>

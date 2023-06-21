@@ -13,6 +13,7 @@ gulp.task("css", async function () {
       "source/stylesheets/base.scss",
       "source/stylesheets/index.scss",
       "source/stylesheets/post.scss",
+      "source/stylesheets/personal.scss",
     ])
     .pipe(
       sass({

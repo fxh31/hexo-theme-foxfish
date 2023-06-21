@@ -1,7 +1,7 @@
 // Color
 :root {
   --color-bg: #d8dfbd;
-  --color-light: #119da4;
+  --color-light: #c4d4d4;
   --color-main: #13505b;
   --color-white: #ccc;
   --color-white-light: #ccc2c2;
@@ -10,6 +10,11 @@
   --color-post-main: #4c4e4d;
   --color-post-mark: #ff0;
   --plyr-color-main: #119da4;
+
+  // shadow
+  --box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+  --css-tag: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  --archive-tag: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
 // #6C7643 929C66 D8DFBD D8DFBD
