@@ -3,17 +3,28 @@
   <%- partial('_partial/head') %>
 
   <body>
-    <%- partial('_partial/header') %>
+    <%- partial('_partial/header') %> <% if(page.total > 1){ %>
+    <div><% console.log(page.per_page) %></div>
+    <% } %>
     <div class="container">
       <div class="main">
         <% if (page.sidebar !== false){ %>
-        <aside class="sidebar sidebar-left"><%- partial('_partial/sidebar') %></aside>
+        <aside class="sidebar sidebar-left">
+          <%- partial('_partial/sidebar') %>
+        </aside>
         <% } %>
         <section class="inner">
+          <% if( is_home() ){ %>
+          <section class="inner-main-index"><%- body %>></section>
+          <% }else{ %>
           <section class="inner-main"><%- body %></section>
+          <% } %>
         </section>
-        
-        <aside class="sidebar sidebar-right"><%- partial('_partial/personal') %></section>
+        <% if( is_home() ){ %>
+        <aside class="sidebar sidebar-right">
+          <%- partial('_partial/personal') %>
+        </aside>
+        <% } %>
       </div>
     </div>
 

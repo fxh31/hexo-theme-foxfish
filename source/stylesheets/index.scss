@@ -51,11 +51,12 @@ a:hover {
   transition: all 0.2s;
 
   &-left {
-    left: calc((100% - 1160px) / 2);
+    left: calc((100% - 1326px) / 2);
+    width: 265px;
   }
 
   &-right {
-    right: calc((100% - 1160px) / 2);
+    right: calc((100% - 1326px) / 2);
   }
 }
 
@@ -112,7 +113,7 @@ a:hover {
 
 // container
 .container {
-  max-width: 1200px;
+  max-width: 1350px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -120,10 +121,15 @@ a:hover {
   position: relative;
   margin-bottom: 150px;
   .inner {
-    padding-left: 400px;
+    padding-left: 299px;
+    padding-right: 276px;
     .inner-main {
       position: relative;
-      width: 100%;
+      width: 1000px;
+
+      &-index {
+        width: 100%;
+      }
     }
   }
 }
