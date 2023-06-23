@@ -14,6 +14,7 @@ gulp.task("css", async function () {
       "source/stylesheets/index.scss",
       "source/stylesheets/post.scss",
       "source/stylesheets/personal.scss",
+      "source/stylesheets/archives.scss",
     ])
     .pipe(
       sass({

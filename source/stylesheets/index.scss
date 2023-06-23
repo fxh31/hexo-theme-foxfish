@@ -46,7 +46,6 @@ a:hover {
 // sidebar-left
 .sidebar {
   position: fixed;
-  top: 20vh;
   border-radius: 6px;
   transition: all 0.2s;
 
@@ -57,6 +56,7 @@ a:hover {
 
   &-right {
     right: calc((100% - 1326px) / 2);
+    top: 120px;
   }
 }
 
