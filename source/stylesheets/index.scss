@@ -26,6 +26,7 @@ a:hover {
 .container-header {
   max-width: 200vh;
   padding: 0 20vh;
+  margin: 0 auto;
 }
 .header {
   display: flex;
@@ -40,6 +41,11 @@ a:hover {
   &-menu {
     display: flex;
     align-items: center;
+
+    &-inner {
+      display: flex;
+      gap: 20px;
+    }
   }
 }
 
@@ -136,10 +142,21 @@ a:hover {
 
 // footer
 .footer {
-  max-width: 200vh;
+  width: 100%;
   margin: 0 auto;
   position: fixed;
   bottom: 0;
+  z-index: -1;
+
+  &-wrap {
+    width: 100%;
+  }
+  &-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 50px 460px;
+    color: var(--color-light);
+  }
 }
 
 // pagination

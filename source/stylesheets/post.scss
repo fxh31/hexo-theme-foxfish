@@ -12,7 +12,6 @@
   background: var(--plyr-color-main);
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 30px;
 
   &-title {
     font-size: 1.4rem;
@@ -510,4 +509,12 @@
 
 .post-inner-html sub {
   bottom: -0.25em;
+}
+
+.highlight {
+  .code {
+    pre {
+      width: 600px;
+    }
+  }
 }
