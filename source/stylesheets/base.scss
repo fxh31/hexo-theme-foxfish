@@ -1,19 +1,20 @@
 // Color
 :root {
-  --color-bg: #d8dfbd;
+  --color-bg: #eaf8e7;
   --color-light: #c4d4d4;
   --color-main: #13505b;
   --color-white: #ccc;
-  --color-white-light: #ccc2c2;
+  --color-white-light: #c9dac6;
   --color-black: #292525;
   --color-type: #3c4859;
   --color-post-main: #4c4e4d;
   --color-post-mark: #ff0;
-  --plyr-color-main: #119da4;
+  //   --plyr-color-main: #c9dac6;
+  --plyr-color-main: #f1f2f6;
 
   // shadow
   --box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
-  --css-tag: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  --css-tag: linear-gradient(to top, #13505b 0%, #deecdd 100%);
   --archive-tag: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
