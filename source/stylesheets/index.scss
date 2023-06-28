@@ -118,21 +118,6 @@ a:hover {
   }
 }
 
-// toc
-.toc {
-  li {
-    list-style: none;
-  }
-  &-level {
-    &-2 {
-      //   margin-left: 2px;
-    }
-    &-3 {
-      margin-left: 1rem;
-    }
-  }
-}
-
 // container
 .container {
   max-width: 1350px;

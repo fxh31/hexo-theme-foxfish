@@ -1,0 +1,11 @@
+<% if(is_post()){ %>
+<div class="toc-wrap" id="toc">
+  <div class="toc-inner">
+    <div class="post-toc-html">
+      <%- toc(page.content, { list_number: false }) %>
+    </div>
+  </div>
+</div>
+
+<div id="backtop"><i class="icon icon-arrow-up"></i></div>
+<% } %>

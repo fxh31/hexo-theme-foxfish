@@ -14,17 +14,16 @@
         </aside>
         <% } %>
         <section class="inner">
-          <% if( is_home() ){ %>
           <section class="inner-main-index"><%- body %></section>
-          <% }else{ %>
-          <section class="inner-main"><%- body %></section>
-          <% } %>
         </section>
         <% if( is_home() ){ %>
         <aside class="sidebar sidebar-right">
           <%- partial('_partial/personal') %>
         </aside>
         <% } %>
+        <aside class="sidebar sidebar-right">
+          <%- partial('_partial/tocSidebar') %>
+        </aside>
       </div>
     </div>
 

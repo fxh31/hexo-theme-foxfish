@@ -1,0 +1,27 @@
+// tocSidebar
+.toc {
+  width: 200px;
+  background: var(--color-white-light);
+  border-radius: 8px;
+  padding: 20px;
+
+  &-level {
+    &-1 {
+      font-weight: bold;
+    }
+
+    &-2 {
+      margin-left: 1rem;
+    }
+    &-3 {
+      margin-left: 2rem;
+    }
+  }
+  &-child {
+    font-weight: 200;
+  }
+
+  li {
+    list-style: none;
+  }
+}
