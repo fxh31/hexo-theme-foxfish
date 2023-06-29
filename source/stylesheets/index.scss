@@ -117,6 +117,14 @@ a:hover {
     }
   }
 }
+.tag-list {
+  display: flex;
+  gap: 1rem;
+  li {
+    max-height: 20px;
+    border: 1px solid #111;
+  }
+}
 
 // container
 .container {
